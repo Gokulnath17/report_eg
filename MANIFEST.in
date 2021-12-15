@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include gokul *.css
+recursive-include gokul *.csv
+recursive-include gokul *.html
+recursive-include gokul *.ico
+recursive-include gokul *.js
+recursive-include gokul *.json
+recursive-include gokul *.md
+recursive-include gokul *.png
+recursive-include gokul *.py
+recursive-include gokul *.svg
+recursive-include gokul *.txt
+recursive-exclude gokul *.pyc
