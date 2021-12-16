@@ -11,8 +11,7 @@
   "ts_emp_name",
   "ts_date",
   "ts_in_time",
-  "ts_out_time",
-  "data_6"
+  "ts_out_time"
  ],
  "fields": [
   {
@@ -43,15 +42,11 @@
    "fieldname": "ts_out_time",
    "fieldtype": "Time",
    "label": "Out Time"
-  },
-  {
-   "fieldname": "data_6",
-   "fieldtype": "Data"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-12-16 15:37:59.939540",
+ "modified": "2021-12-16 15:40:45.237611",
  "modified_by": "Administrator",
  "module": "Gokul",
  "name": "ts_Attendance",
