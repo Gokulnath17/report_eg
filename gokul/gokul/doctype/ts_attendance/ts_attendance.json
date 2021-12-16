@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "AT.###",
+ "creation": "2021-12-16 10:24:47.226398",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ts_emp_id",
+  "ts_emp_name",
+  "ts_date",
+  "ts_in_time",
+  "ts_out_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "ts_emp_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee_Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ts_emp_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee_name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ts_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "ts_in_time",
+   "fieldtype": "Time",
+   "label": "In Time"
+  },
+  {
+   "fieldname": "ts_out_time",
+   "fieldtype": "Time",
+   "label": "Out Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-12-16 13:06:58.672479",
+ "modified_by": "Administrator",
+ "module": "Gokul",
+ "name": "ts_Attendance",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
