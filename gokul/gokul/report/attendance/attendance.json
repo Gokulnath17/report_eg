@@ -1,0 +1,51 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2021-12-16 12:37:06.638659",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "ts_from_date_fi",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "ts_to_date_fi",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "ts_emp_name_fi",
+   "fieldtype": "Select",
+   "label": "Employee Name",
+   "mandatory": 1,
+   "options": "Gokulnath M\nChandana S P\nNaveen S R",
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2021-12-17 12:09:31.703083",
+ "modified_by": "Administrator",
+ "module": "Gokul",
+ "name": "Attendance",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "select ts_date as date,\n       ts_emp_id as employee_id,\n       ts_emp_name as employee_name,\n       ts_in_time as In_Time,\n       ts_out as Out_time,\n       if(ts_in_time IS NULL ,\"Absent\", \"Present\") as Attendance_Details\nfrom `tabts_Attendance`\nwhere \nts_date >=%(ts_from_date_fi)s and\nts_date <=%(ts_to_date_fi)s and\nts_emp_name=%(ts_emp_name_fi)s",
+ "ref_doctype": "ts_Attendance",
+ "reference_report": "Review",
+ "report_name": "Attendance",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}
